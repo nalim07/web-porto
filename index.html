@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nalim07</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/css/custom.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="absolute left-0 top-0 z-10 mb-1 flex w-full items-center bg-transparent">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="teext-xl font-bold text-gray-900 block py-4">ig: @n_alim07</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line origin-top-left transition duration-200 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-100 ease-in-out"></span>
+                        <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+                    <!-- Mobile menu -->
+                    <nav id="nav-menu"
+                        class="hidden absolute right-4 top-full mt-4 w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow-lg lg:static lg:block lg:bg-transparent lg:max-w-full lg:w-full lg:p-0 lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="nav-link py-2 mx-4 flex group-hover:text-slate-700">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="nav-link py-2 mx-4 flex group-hover:text-slate-700">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="nav-link py-2 mx-4 flex group-hover:text-slate-700">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="#home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full bg-red-50 flex items-center justify-center">
+                    <h1 class="text-4xl font-bold text-gray-950">Halo Bang</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div id="game-container">
+                <div id="dino">
+                    <img src="assets/dinosaur-game-seeklogo.svg" alt="dino"/>
+                    <!-- <div id="dino-head"></div>
+                    <div id="dino-body"></div>
+                    <div id="dino-tail"></div> -->
+                </div>
+                <div id="ground"></div>
+                <div id="obstacle"></div>
+            </div>
+            <p id="score">Score: 0</p>
+            <button id="try-again" style="display: none;">Try Again</button>
+        </div>
+    </section>
+
+    <!-- <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a frontend developer skilled in creating interactive and modern web applications. My core technologies include:</p>
+        <ul class="list-disc list-inside text-gray-600 mt-4">
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>CSS</li>
+            <li>HTML</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section" style="background-color: #EDF2F7;">
+        <h2 class="section-title">My Projects</h2>
+        <p>Here are some of the projects I have worked on:</p>
+        <div class="mt-6">
+            <div class="p-4 bg-white rounded shadow-md mb-4">
+                <h3 class="text-xl font-bold">Project 1</h3>
+                <p class="text-gray-600">Description of project 1.</p>
+            </div>
+            <div class="p-4 bg-white rounded shadow-md">
+                <h3 class="text-xl font-bold">Project 2</h3>
+                <p class="text-gray-600">Description of project 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Feel free to reach out to discuss a project or just to say hi!</p>
+        <a href="mailto:your.email@example.com" class="btn mt-4">Email Me</a>
+    </section>
+
+    <div class="section">
+        <h2 class="section-title">Interactive Dino</h2>
+        <div class="dino"></div>
+        <p>Press the spacebar to make the dino jump!</p>
+    </div> -->
+
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
