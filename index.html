@@ -5,111 +5,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nalim07</title>
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="stylesheet" href="src/css/custom.css" />
+
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="absolute left-0 top-0 z-10 mb-1 flex w-full items-center bg-transparent">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#home" class="teext-xl font-bold text-gray-900 block py-4">ig: @n_alim07</a>
+    <div class="container">
+        <nav>
+            <div class="logo">Nur Alim</div>
+            <div class="nav-links">
+                <a data-section="home" class="active">Home</a>
+                <a data-section="about">About</a>
+                <a data-section="projects">Projects</a>
+                <a data-section="skills">Skills</a>
+                <a data-section="content">Content</a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <main id="main-content">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <div class="hologram-container">
+                    <div class="hero-content">
+                        <h1>Hi, I'm Nur Alim</h1>
+                        <h2>I'M A
+                            <span class="typewriter-text"></span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa distincta repudiandae
+                            architecto et iste quisquam rerum molestiae non fraudalentur.</p>
+                        <a href="#" class="btn">Hire me</a>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/@liim07.channel" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://github.com/nalim07" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:alim.nur7799@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="profile-image">
+                        <div class="profile-circle">
+                            <img src="assets/logo_na.png" alt="Profile">
+                        </div>
+                    </div>
                 </div>
-                <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="hamburger-line origin-top-left transition duration-200 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-100 ease-in-out"></span>
-                        <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-                    </button>
-                    <!-- Mobile menu -->
-                    <nav id="nav-menu"
-                        class="hidden absolute right-4 top-full mt-4 w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow-lg lg:static lg:block lg:bg-transparent lg:max-w-full lg:w-full lg:p-0 lg:shadow-none">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="#home" class="nav-link py-2 mx-4 flex group-hover:text-slate-700">Home</a>
-                            </li>
-                            <li class="group">
-                                <a href="#about" class="nav-link py-2 mx-4 flex group-hover:text-slate-700">About</a>
-                            </li>
-                            <li class="group">
-                                <a href="#contact" class="nav-link py-2 mx-4 flex group-hover:text-slate-700">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <div class="hologram-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>Cooming Soon</h3>
+                            <!-- <p>Started coding at age 12, building simple games and websites.</p> -->
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </header>
+            </section>
 
-    <!-- Hero Section -->
-    <section id="#home" class="pt-36">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full bg-red-50 flex items-center justify-center">
-                    <h1 class="text-4xl font-bold text-gray-950">Halo Bang</h1>
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <div class="hologram-container">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>Academic Information System</h3>
+                            <p>Creating an academic information system at Aisyiyah Labuhan Kindergarten</p>
+                            <div class="tech-stack">
+                                <span>PHP,</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section>
-        <div class="container">
-            <div id="game-container">
-                <div id="dino">
-                    <img src="assets/dinosaur-game-seeklogo.svg" alt="dino"/>
-                    <!-- <div id="dino-head"></div>
-                    <div id="dino-body"></div>
-                    <div id="dino-tail"></div> -->
+            <!-- Skills Section -->
+            <section id="skills" class="content-section">
+                <div class="hologram-container">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <ul class="skill-list">
+                                <li>
+                                    HTML/CSS
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    JavaScript
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    React
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 25%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <ul class="skill-list">
+                                <li>
+                                    PHP
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Node.js
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Database
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 60%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div id="ground"></div>
-                <div id="obstacle"></div>
-            </div>
-            <p id="score">Score: 0</p>
-            <button id="try-again" style="display: none;">Try Again</button>
-        </div>
-    </section>
+            </section>
 
-    <!-- <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <p>I am a frontend developer skilled in creating interactive and modern web applications. My core technologies include:</p>
-        <ul class="list-disc list-inside text-gray-600 mt-4">
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>CSS</li>
-            <li>HTML</li>
-        </ul>
-    </section>
+            <!-- Content Section -->
+            <section id="content" class="content-section">
+                <div class="hologram-container">
+                    <div class="content-grid">
+                        <h2>Latest Blog Posts</h2>
+                        <!-- Add your blog posts or other content here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
-    <section id="projects" class="section" style="background-color: #EDF2F7;">
-        <h2 class="section-title">My Projects</h2>
-        <p>Here are some of the projects I have worked on:</p>
-        <div class="mt-6">
-            <div class="p-4 bg-white rounded shadow-md mb-4">
-                <h3 class="text-xl font-bold">Project 1</h3>
-                <p class="text-gray-600">Description of project 1.</p>
-            </div>
-            <div class="p-4 bg-white rounded shadow-md">
-                <h3 class="text-xl font-bold">Project 2</h3>
-                <p class="text-gray-600">Description of project 2.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact Me</h2>
-        <p>Feel free to reach out to discuss a project or just to say hi!</p>
-        <a href="mailto:your.email@example.com" class="btn mt-4">Email Me</a>
-    </section>
-
-    <div class="section">
-        <h2 class="section-title">Interactive Dino</h2>
-        <div class="dino"></div>
-        <p>Press the spacebar to make the dino jump!</p>
-    </div> -->
-
-    <script src="dist/js/script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 
 </html>
